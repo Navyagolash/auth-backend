@@ -29,7 +29,9 @@ console.log("Pass:", process.env.EMAIL_PASS ? "Loaded" : "Missing");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "*"  // or ["https://your-vercel-app.vercel.app"]
+}));
 
 // MongoDB connection
 mongoose.connect("mongodb+srv://logindb:testdb@cluster0.z7wzh1e.mongodb.net/loginDB")
