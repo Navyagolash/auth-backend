@@ -33,12 +33,10 @@ app.use(cors({
   origin: "*"  // or ["https://your-vercel-app.vercel.app"]
 }));
 
-// MongoDB connection
 mongoose.connect("mongodb+srv://logindb:testdb@cluster0.z7wzh1e.mongodb.net/loginDB")
   .then(() => console.log("✅ MongoDB connected"))
   .catch(err => console.error("❌ MongoDB Error:", err));
 
-// Routes
 const authRoutes = require("./routes/auth");
 app.use("/api/auth", authRoutes);
 
