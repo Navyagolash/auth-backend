@@ -1,23 +1,3 @@
-// const express = require("express");
-// const mongoose = require("mongoose");
-// const cors = require("cors");
-
-// const authRoutes = require("./routes/auth.routes");
-
-// const app = express();
-// app.use(express.json());
-// app.use(cors());
-
-// mongoose.connect("mongodb+srv://logindb:testdb@cluster0.z7wzh1e.mongodb.net/loginDB", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// })
-// .then(() => console.log("✅ MongoDB connected"))
-// .catch(err => console.error("❌ MongoDB Error:", err));
-
-// app.use("/api/auth", authRoutes);
-
-// app.listen(5000, () => console.log("🚀 Server running on port 5000"));
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");

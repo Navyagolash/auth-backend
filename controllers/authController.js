@@ -4,9 +4,6 @@ const crypto = require("crypto");
 const nodemailer = require("nodemailer");
 const User = require("../models/User");
 
-
-
-
 exports.signup = async (req, res) => {
     try {
         const { username, email, password } = req.body;
