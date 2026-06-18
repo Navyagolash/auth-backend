@@ -7,7 +7,6 @@ const User = require("../models/User");
 
 
 
-// Signup
 exports.signup = async (req, res) => {
     try {
         const { username, email, password } = req.body;
@@ -25,7 +24,6 @@ exports.signup = async (req, res) => {
     }
 };
 
-// Login
 exports.login = async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -42,7 +40,6 @@ exports.login = async (req, res) => {
     }
 };
 
-// Forgot Password
 exports.forgotPassword = async (req, res) => {
     try {
         const { email } = req.body;
