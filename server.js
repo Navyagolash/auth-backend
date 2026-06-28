@@ -2,7 +2,6 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-// require("dotenv").config();
 console.log("Email:", process.env.EMAIL_USER);
 console.log("Pass:", process.env.EMAIL_PASS ? "Loaded" : "Missing");
 
